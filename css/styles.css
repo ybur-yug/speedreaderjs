@@ -1,0 +1,23 @@
+#displayed-text {
+  font-size: 54px;
+}
+
+.centered {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#speed-text {
+font-size: 54px;
+color: white;
+padding-top: 5%;
+}
+
+#text-display {
+  color: white;
+  font-size: 54px;
+  font-family: sans-serif;
+  padding-top: 5%;
+}

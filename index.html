@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Speed Readin'</title>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.windows.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/scripts.js"></script>
+
+
+
+    </head>
+    <body>
+
+        <!-- NOTE: each "window" is a section element with class .window -->
+
+        <section id="0" class="window">
+            <div class="content">
+                    <h1>Speed Readin'</h1>
+                    <h2>A web tool to help you read much more better faster.<br> Scroll down a bit to learn more...</h2><br>
+                    <center><img src="img/downarrow.png" id='centered'></center>        
+            </div>
+        </section>
+
+        <section id="1" class="window">
+            <div class="content">
+                <h2 id='displayed-text'>
+                By Bobby and Dustin
+                </h2>
+            </div>
+        </section>
+
+        <section id="2" class="window">
+            <div class="content">
+                <h2>How it works</h2>
+                <div class="explanation">We take a bunch of words from novels, plays, an article you paste in, anything really, in order. and then...
+                    <ul>
+                        <li>- break them into chunks</li>
+                        <li>- display them on a color neutral screen you can easily read from</li>
+                    </ul>
+                    It's quite simple, but helps quite a bit too.
+                </div>
+            </div>
+        </section>
+
+        <section id="3" class="window">
+            <div class="initially-showing">
+                <h2 id="speed-text">set reading speed</h2>
+            </div>
+           <center> <p id="text-display"></p>
+                <input id="words-per-minute" type="number" placeholder="words per minute"><br>
+                <textarea id="their-book" rows="4" cols="50">
+                Paste your own book or article in here!
+                </textarea><br>
+                <button id="start-words">read The Curse of Lono</button>
+                <button id="my-words">read my own stuff!</button>
+<!--                 <button id="stop-words">stop</button>
+ -->            </center>
+
+        </section>
+
+        <section id="4" class="window">
+            <div class="content">
+                <h1>By the way</h1>
+                <p>
+                    this uses fittext and windows jquery plugins. Theyre quite rad. Google that shit.
+
+                </p>
+            </div>
+        </section>
+
+        <section id="5" class="window">
+            <div class="content">
+                <a href="http://www.epicodus.com" title="See who taught us all this cool jazz!" id="btn-wrap">
+                    <span class="title">Shameless Epicodus Plug</span>
+                    <div id="info">
+                        <p>
+                            <strong class='centered'>Bootcamp it!</strong>
+                            <span class='centered'>Seriously.</span>
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <script>
+
+            $(document).ready(function(){
+
+                var $windows = $('.window');
+
+                $windows.windows({
+                    snapping: true,
+                    snapSpeed: 500,
+                    snapInterval: 1100,
+                    onScroll: function(s){},
+                    onSnapComplete: function($el){},
+                    onWindowEnter: function($el){}
+                });
+
+            });
+        </script>
+
+    </body>
+</html>
