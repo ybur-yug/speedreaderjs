@@ -3,11 +3,11 @@
 ---
 
 #### A handy speed-reading application
-#### TODOS
-###Add stop button
-###Fix Unicode display errors
-###Pull in plaintext full out-of-copyright books
-## Usage
+## TODOS
+####Add stop button
+####Fix Unicode display errors
+####Pull in plaintext full out-of-copyright books
+# Usage
 
 Unzip. Open index.html in browser. 
 
