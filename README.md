@@ -7,6 +7,7 @@
 ####Add stop button
 ####Fix Unicode display errors
 ####Pull in plaintext full out-of-copyright books
+####Cordova App
 # Usage
 
 Unzip. Open index.html in browser. 
